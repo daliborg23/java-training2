@@ -1,7 +1,5 @@
 package account11;
 
-import java.util.*;
-
 public class Account
 {
 	public int balance;
@@ -11,6 +9,9 @@ public class Account
 		if (balance + amount < 0)
 		{
 			throw new IndexOutOfBoundsException("Nedostatek penez pro vyber... Na ucte je: " + balance);
+		}
+		if (amount == 0) {
+		    throw new IllegalArgumentException("Nelze poslat 0,-");
 		}
 		balance += amount;
 	}
@@ -27,24 +28,25 @@ public class Account
 		try
 		{
 			if (kurz == 0) {
-			    throw new IllegalArgumentException("Argument 'divisor' is 0");
+			    throw new IllegalArgumentException("Nelze zadat 0. Zadany kurz: " + kurz);
+			}
+			if (kurz < 0) {
+				throw new ArithmeticException("Nelze zadat zaporne cislo. Zadany kurz: " + kurz);
+			}
+			if (kurz > 30) {
+				throw new ArithmeticException("Jedna se o podvod. Zadany kurz: " + kurz);
 			}
 			return balance / kurz;
 		}
 		catch (IllegalArgumentException e)
 		{
-			System.out.println("Deleni nulou!" + e.getMessage());
-			return balance;
+			System.out.println(e.getMessage());
+			return 0;
 		}
 		catch (ArithmeticException e)
 		{
-			System.out.println("Nejaka dalsi vyjimka co se pocitani tyce." + e.getMessage());
-			return balance;
-		}
-		catch (RuntimeException e)
-		{
-			System.out.println("Nejaka dalsi vyjimka co se pocitani tyce. Exception" + e.getMessage());
-			return balance;
+			System.out.println(e.getMessage());
+			return 0;
 		}
 	}
 	public final double writeBalanceInDolarsDouble(double kurz)
@@ -53,14 +55,25 @@ public class Account
 		{
 			if (kurz == 0)
 			{
-				throw new IllegalArgumentException();
+				throw new IllegalArgumentException("Nelze zadat 0. Zadany kurz: " + kurz);
+			}
+			if (kurz < 0) {
+				throw new ArithmeticException("Nelze zadat zaporne cislo. Zadany kurz: " + kurz);
+			}
+			if (kurz > 30) {
+				throw new ArithmeticException("Jedna se o podvod. Zadany kurz: " + kurz);
 			}
 			return balance / kurz;
 		}
 		catch (IllegalArgumentException e)
 		{
-			System.out.println("Deleni nulou!");
-			return balance;
+			System.out.println(e.getMessage() + "\n" + e.getStackTrace());
+			return 0;
+		}
+		catch (ArithmeticException e)
+		{
+			System.out.println(e.getMessage() + "\n" + e.getStackTrace());
+			return 0;
 		}
 	}
 	public final void transferTo(Account account, int amount)

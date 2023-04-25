@@ -1,4 +1,4 @@
-package accoun6;
+package account6;
 
 public class Main {
     public static void main(String[] args) {
