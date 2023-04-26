@@ -28,22 +28,22 @@ public class Circle extends Shape implements IPocitani
 	}
 	public final double perimeter()
 	{
-		return Double.isNaN((2 * Math.PI * r)) ? Double.NaN : Math.round((2 * Math.PI * r) * Math.pow(10, 2)) / Math.pow(10, 2);
+		return Math.round((2 * Math.PI * r) * Math.pow(10, 2)) / Math.pow(10, 2);
 	}
 	@Override
 	public double area()
 	{
-		return Double.isNaN((Math.PI * Math.pow(r, 2))) ? Double.NaN : Math.round((Math.PI * Math.pow(r, 2)) * Math.pow(10, 2)) / Math.pow(10, 2);
+		return Math.round((Math.PI * Math.pow(r, 2)) * Math.pow(10, 2)) / Math.pow(10, 2);
 	}
 	@Override
 	public String toString()
 	{
-		return String.format("Kruh s polomerem: %1$5scm", Double.isNaN(r) ? Double.NaN : Math.round(r * Math.pow(10, 2)) / Math.pow(10, 2));
+		return String.format("Kruh s polomerem: %1$5scm", Math.round(r * Math.pow(10, 2)) / Math.pow(10, 2));
 	}
 	@Override
 	public void writeInfo()
 	{
-		System.out.print(String.format("Kruh s polomerem: %1$5scm, Obvodem: %2$scm, Obsahem: %3$scm2 ", Double.isNaN(r) ? Double.NaN : Math.round(r * Math.pow(10, 2)) / Math.pow(10, 2), perimeter(), area()));
+		System.out.print(String.format("Kruh s polomerem: %1$5scm, Obvodem: %2$scm, Obsahem: %3$scm2 ", Math.round(r * Math.pow(10, 2)) / Math.pow(10, 2), perimeter(), area()));
 		super.writeInfo();
 	}
 }
