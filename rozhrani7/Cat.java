@@ -5,6 +5,7 @@ public class Cat extends Animal implements ISoundable
 	//private boolean isPedigree;
 	public Cat()
 	{
+		super();
 	}
 	public Cat(String name)
 	{

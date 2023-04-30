@@ -5,6 +5,7 @@ public class Dog extends Animal implements ISoundable
 	//private boolean isPedigree;
 	public Dog()
 	{
+		super();
 	}
 	public Dog(String name)
 	{

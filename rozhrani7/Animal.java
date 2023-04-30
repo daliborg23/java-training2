@@ -4,8 +4,8 @@ public abstract class Animal
 {
 	public String name;
 	public static int countOfAnimals;
-	public Animal()
-	{
+	public Animal() {
+		countOfAnimals++;
 	}
 	public Animal(String name)
 	{
