@@ -43,7 +43,7 @@ public class Circle extends Shape implements IPocitani
 	@Override
 	public void writeInfo()
 	{
-		System.out.print(String.format("Kruh s polomerem: %1$5scm, Obvodem: %2$scm, Obsahem: %3$scm2 ", Math.round(r * Math.pow(10, 2)) / Math.pow(10, 2), perimeter(), area()));
+		System.out.printf("Kruh s polomerem: %1$5scm, Obvodem: %2$scm, Obsahem: %3$scm2 ", Math.round(r * Math.pow(10, 2)) / Math.pow(10, 2), perimeter(), area());
 		super.writeInfo();
 	}
 }

@@ -10,7 +10,7 @@ public class Rozhrani
 
 		for (var item : animals)
 		{
-			System.out.println(String.format("%1$s %2$s vydava zvuk %3$s", item.getClass().getSimpleName(), item.getJmeno(), item.sound()));
+			System.out.printf("%1$s %2$s vydava zvuk %3$s%n", item.getClass().getSimpleName(), item.getJmeno(), item.sound());
 		}
 		System.out.println("===============================");
 		for (var item : animals)

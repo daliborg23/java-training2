@@ -52,11 +52,11 @@ public class Rectangle extends Shape implements IPocitani
 	{
 		if (a == b)
 		{
-			System.out.print(String.format("Ctverec s delkou strany: a = %1$5scm ", Math.round(a * Math.pow(10, 2)) / Math.pow(10, 2)));
+			System.out.printf("Ctverec s delkou strany: a = %1$5scm ", Math.round(a * Math.pow(10, 2)) / Math.pow(10, 2));
 		}
 		else
 		{
-			System.out.print(String.format("Obdelnik s delkou stran: a = %1$5scm, b = %2$5scm, Obvodem: %3$scm, Obsahem: %4$scm2 ", Math.round(a * Math.pow(10, 2)) / Math.pow(10, 2), Math.round(b * Math.pow(10, 2)) / Math.pow(10, 2), perimeter(), area()));
+			System.out.printf("Obdelnik s delkou stran: a = %1$5scm, b = %2$5scm, Obvodem: %3$scm, Obsahem: %4$scm2 ", Math.round(a * Math.pow(10, 2)) / Math.pow(10, 2), Math.round(b * Math.pow(10, 2)) / Math.pow(10, 2), perimeter(), area());
 		}
 		super.writeInfo();
 	}

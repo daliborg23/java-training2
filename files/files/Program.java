@@ -8,8 +8,7 @@ public class Program
 		//_2FileNotParse.Mainx();
 		////A1.Mainx();
 		//_3A1FileStr.Mainx();
-		_4A1FileByte.Mainx();
-		//_4bA1FileByte.Mainx();
-		//_5A1FileInt.Mainx();
+		//_4A1FileByte.Mainx();
+		_5A1FileInt.Mainx();
 	}
 }

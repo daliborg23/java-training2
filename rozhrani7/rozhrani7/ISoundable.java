@@ -4,7 +4,7 @@ package rozhrani7;
 
 public interface ISoundable
 {
-	public String sound();
-	public String getJmeno();
-	public String toString();
+	String sound();
+	String getJmeno();
+	String toString();
 }

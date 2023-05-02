@@ -22,7 +22,7 @@ public class TestCircle {
 		System.out.println("c4 color is: " + c4.getColor());
 		
 		Circle c5 = new Circle(5.55,"yellow");
-		System.out.println(c5.toString());
+		System.out.println(c5);
 		System.out.println(c5);
 		System.out.println("Operator '+' invokes toString() too " + c5);
 		

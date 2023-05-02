@@ -13,7 +13,6 @@ public class _4A1FileByte
 		int ii = 0;
 		int dny = 0;
 		int hodiny = 0;
-		File fi = new File(cesta);
 
         // zapis
         try {

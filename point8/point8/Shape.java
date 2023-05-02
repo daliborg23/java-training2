@@ -22,6 +22,6 @@ public abstract class Shape
 	}
 	public void writeInfo()
 	{
-		System.out.println(String.format("a Stred tvaru je v bode %1$s.", center));
+		System.out.printf("a Stred tvaru je v bode %1$s.%n", center);
 	}
 }

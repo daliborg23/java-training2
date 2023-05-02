@@ -12,7 +12,7 @@ public class Main
 		t1.writeInfo();
 		System.out.println("Pocet osob: " + Person.getCount() + ", vek: " + t1.age);
 		System.out.println(s1);
-		System.out.println(s1.toString());
-		System.out.println(s1.toString());
+		System.out.println(s1);
+		System.out.println(s1);
 	}
 }

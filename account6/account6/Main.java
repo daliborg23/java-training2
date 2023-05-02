@@ -21,19 +21,19 @@ public class Main {
         System.out.println("----------------");
         o1.writeAccounts();
         System.out.println("----------------");
-        System.out.println(o1.toString());
+        System.out.println(o1);
         System.out.println("----------------");
         u5.writeBalance();
         System.out.println(u5.owner.dateOfBirth.year);
-        System.out.println(u6.toString());
+        System.out.println(u6);
         System.out.println("----------------");
         System.out.println(o1.getAge());
         System.out.println(u6.owner.getAge());
         System.out.println("----------------");
         Person o2 = new Person("Kristyna",22,3,2011);
-        System.out.println(o2.toString());
+        System.out.println(o2);
         Person o3 = new Person("Alice", 1, 2, 1999);
-        System.out.println(o3.toString());
+        System.out.println(o3);
         System.out.println("----------------");
     }
 }

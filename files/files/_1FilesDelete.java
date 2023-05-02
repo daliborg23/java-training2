@@ -17,7 +17,7 @@ public class _1FilesDelete {
             if (slozka.createNewFile()) {
                 System.out.println("Folder created: " + slozka.getName());
             } else {
-                System.out.println("Folder already exists. " + slozka.toString());
+                System.out.println("Folder already exists. " + slozka);
             }
         } catch (IOException e) {
             System.out.println("An error occurred.");

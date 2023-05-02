@@ -2,7 +2,7 @@ package prvni11;
 
 public class Teacher extends Employee
 {
-	private int teachingTime;
+	private final int teachingTime;
 	public Teacher(int age, int salary, int teachingTime)
 	{
 		super(age, salary);
