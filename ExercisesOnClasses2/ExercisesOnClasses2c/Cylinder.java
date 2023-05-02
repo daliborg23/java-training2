@@ -1,4 +1,6 @@
-package ExercisesOnClasses2b;
+package ExercisesOnClasses2c;
+
+import ExercisesOnClasses2b.Circle;
 
 public class Cylinder extends Circle {
     private double height;
