@@ -13,6 +13,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/zDisku" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ExercisesOnClasses2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ExercisesOnComposition" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
