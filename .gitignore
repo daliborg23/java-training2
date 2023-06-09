@@ -1,7 +1,7 @@
 ### IntelliJ IDEA ###
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+!Testing-JUnit/Signum/main/**/out/
+!Testing-JUnit/Signum/test/**/out/
 
 ### Eclipse ###
 .apt_generated
@@ -9,8 +9,8 @@ out/
 .springBeans
 .sts4-cache
 bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+!Testing-JUnit/Signum/main/**/bin/
+!Testing-JUnit/Signum/test/**/bin/
 
 ### NetBeans ###
 /nbproject/private/

@@ -14,6 +14,9 @@
       <sourceFolder url="file://$MODULE_DIR$/zDisku" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ExercisesOnClasses2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ExercisesOnComposition" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Testing-JUnit" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Testing-JUnit/Signum" type="java-test-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/Testing-JUnit/test" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

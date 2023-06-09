@@ -75,7 +75,7 @@ public class Main {
         reader.listBorrowed();
         System.out.println();
 
-        System.out.println("====================================VRACENI=3=PUJCENYCH=KNIH=============================");
+        System.out.println("========================================VRACENI=3=PUJCENYCH=KNIH=================================");
         reader.returnBook(b1_1);
         reader.returnBook(b1_2);
         reader.returnBook(b1_3);
@@ -102,6 +102,34 @@ public class Main {
         reader2.borrowBook(b4_2);
         reader2.borrowBook(b4_3);
         reader2.borrowBook(b4_4);
+
+        // Vypis po vypujceni
+        library1.listAll();
+        System.out.println();
+        library1.listAvailable();
+        System.out.println();
+        library1.listUnavailable();
+        System.out.println();
+
+        System.out.println("=============================VYTVOREN=HLADOVY=CTENAR=A=VYPUJCIL=VSE==============================");
+        Reader reader3 = new Reader("John", "Varijot", new ArrayList<Book>(), new Date(1 / 1 / 1990));
+        reader3.borrowBook(b1_1);
+        reader3.borrowBook(b1_2);
+        reader3.borrowBook(b1_3);
+        reader3.borrowBook(b2_1);
+        reader3.borrowBook(b2_2);
+        reader3.borrowBook(b2_3);
+        reader3.borrowBook(b2_4);
+        reader3.borrowBook(b3_1);
+        reader3.borrowBook(b3_2);
+        reader3.borrowBook(b3_3);
+        reader3.borrowBook(b4_1);
+        reader3.borrowBook(b4_2);
+        reader3.borrowBook(b4_3);
+        reader3.borrowBook(b4_4);
+        reader3.borrowBook(b5_1);
+        reader3.borrowBook(b5_2);
+        reader3.borrowBook(b5_3);
 
         // Vypis po vypujceni
         library1.listAll();
